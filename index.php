@@ -8,6 +8,37 @@
     <title>Document</title>
   </head>
   <body>
+
+  <div class="navbar">
+
+    <ul>
+    <li><a href="./inserter.php"> clicky </a> </li>
+    <li><a href="./inserter.php"> clucky</a> </li>
+    <li><a href="./inserter.php"> clicky </a> </li>
+    <li><a href="./inserter.php"> home3 </a> </li>
+    <li><a href="./inserter.php"> clicky </a> </li>
+
+</ul>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="wrapper">
       <div class="firstline">
         <div class="col3-1">
@@ -71,17 +102,18 @@ if ($rescheck >0  ){
         $un =  $row['username'];
         $hv =  $row['usertext'];
         
+        echo("<div class='commentclasswrapper'>");
         
-
-        echo ("<div class='commentclass'>");
-        echo ("<div class='dtcmt'>");
-        echo("<p class='names'> $un </p>");
-      
-        echo("</div>");
-        echo ("<div class='msgcontainer'>");
+        echo("<div class='commentclass'>");
+        echo("<h4 class='names'> $un </h4>");
+        echo("<p></p>");
         echo("<p class='msgs'>$hv </p>");
         echo("</div>");
+       
+        
         echo("</div>");
+      
+       
     };
 }
 

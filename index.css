@@ -1,6 +1,12 @@
 .wrapper {
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to right, #28313b, #485461);
+}
+
 .col3-1 {
   flex-basis: 33%;
 }
@@ -9,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: azure;
 }
 
 .secondline {
@@ -26,18 +33,62 @@
   margin: 5px;
 }
 .col2-more {
-  flex-basis: 70%;
-  background-color: blue;
   justify-content: center;
   display: flex;
 }
 
 .col2-more p {
   color: aliceblue;
-  margin: auto;
+
   font-size: 25px;
 }
 
 .col2-more img {
   margin-left: 110px;
+  border-radius: 25px;
+}
+
+.commentclass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px white solid;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.commentclasswrapper {
+  display: block;
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.commentclass h4 {
+  border-bottom: 1px white solid;
+  padding-bottom: 10px;
+}
+
+.commentclass p {
+  margin-bottom: 15px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding-right: 25px;
+}
+
+.navbar ul {
+  margin-right: 100px;
 }
