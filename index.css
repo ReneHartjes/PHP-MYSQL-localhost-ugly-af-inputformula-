@@ -1,0 +1,43 @@
+.wrapper {
+}
+
+.col3-1 {
+  flex-basis: 33%;
+}
+
+.firstline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondline {
+  display: flex;
+  justify-content: center;
+}
+
+.inputform {
+  flex-basis: 15%;
+  padding: 25px;
+  background-color: black;
+}
+
+.inputform input {
+  margin: 5px;
+}
+.col2-more {
+  flex-basis: 70%;
+  background-color: blue;
+  justify-content: center;
+  display: flex;
+}
+
+.col2-more p {
+  color: aliceblue;
+  margin: auto;
+  font-size: 25px;
+}
+
+.col2-more img {
+  margin-left: 110px;
+}
