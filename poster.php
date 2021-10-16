@@ -12,17 +12,44 @@
 
 
 
-        include_once 'connect.php';
+        include_once 'connection.php';
 
 
 
 
-        $ip = $_POST["InputName"];
-        $Name = $_POST["InputText"];
-
-           
-
+       
+        echo("hrroo");
+        include_once 'connection.php';
+        $pop = 'Rattenjunge';
+        $sql = "SELECT * FROM users where username='$pop';";
+        $results = mysqli_query($conn, $sql);
+        $rescheck = mysqli_num_rows($results);
+        
+        if ($rescheck >0  ){
+            while($row = mysqli_fetch_assoc($results)){
+                $un =  $row['username'];
+                $hv =  $row['usertext'];
+                
+                echo("<div class='commentclasswrapper'>");
+                
+                echo("<div class='commentclass'>");
+                echo("<h4 class='names'> $un </h4>");
+                echo("<p></p>");
+                echo("<p class='msgs'>$hv </p>");
+                echo("</div>");
+               
+                
+                echo("</div>");
+              
+               
+            };
+        }
 
     ?>
+
+    <div class="nuut">
+        
+
+    </div>
 </body>
 </html>

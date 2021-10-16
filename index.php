@@ -12,8 +12,8 @@
   <div class="navbar">
 
     <ul>
-    <li><a href="./inserter.php"> clicky </a> </li>
-    <li><a href="./inserter.php"> clucky</a> </li>
+    <li><a href="./poster.php"> clicky </a> </li>
+    <li><a href="./poster.php"> clucky</a> </li>
     <li><a href="./inserter.php"> clicky </a> </li>
     <li><a href="./inserter.php"> home3 </a> </li>
     <li><a href="./inserter.php"> clicky </a> </li>
@@ -93,7 +93,8 @@
         <?php   
 
 include_once 'connection.php';
-$sql = "SELECT * FROM users;";
+$pop = 'Rene';
+$sql = "SELECT * FROM users where username='$pop';";
 $results = mysqli_query($conn, $sql);
 $rescheck = mysqli_num_rows($results);
 

@@ -3,8 +3,8 @@
 
 
 
-include_once 'connect.php';
-$sql = "SELECT * FROM commentsss;";
+include_once 'connection.php';
+$sql = "SELECT * FROM users;";
 $results = mysqli_query($conn, $sql);
 $rescheck = mysqli_num_rows($results);
 
