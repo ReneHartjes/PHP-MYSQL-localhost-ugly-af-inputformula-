@@ -14,7 +14,10 @@
                 $un =  $row['username'];
                 $hv =  $row['password'];
 
-                echo("<h4 class='names'> willkommen Meister $un </h4>");}
+                echo("<h4 class='names'> willkommen Meister $un </h4>");
+                header('Location: ./index.php');
+            
+            }
             
             } else {
 
@@ -33,9 +36,9 @@
                     echo("falsches password");
                     echo("falsches password");
                     echo("falsches password");
-                    sleep(2);
+                    sleep(2) ;
                     header('Location: ./login.html');
-                    echo(" nonono");
+                    
         
                 }
             
