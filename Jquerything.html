@@ -23,18 +23,12 @@
       $(document).ready(function(){
 
       $('#clicker').click(blub);
-        
 
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET','ajax_info.txt',true);
-        xhr.onload= function(){
-
-          if(xhr.status == 200){
-            console.log(this.responseText);}
-          }
-          xhr.send();
-        
-      
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "ajax_info.txt", true);
+      console.log(xhttp)
+      var cs = xhttp.send();
+      console.log(xhttp)
       let bt = 0;
 
 
@@ -42,9 +36,6 @@
         console.log("ya")
         bt +=1
         $('#headerer').text(bt)
-
-
-       
         
 
       }
@@ -57,8 +48,3 @@
 
     </script>
     
-
-
-
-  </body>
-</html>
