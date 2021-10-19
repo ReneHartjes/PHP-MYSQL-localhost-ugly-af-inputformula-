@@ -14,7 +14,7 @@
       integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=";
       crossorigin = "anonymous";
     </script>
-    <style rel="stylesheet" href="styler.css"></style>
+    <link href="./styler.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
 
 
@@ -69,13 +69,15 @@ function blub(){
  
  <p id="lassa">123</p> 
 
-<button id="buttonnn"> </button>
+<button id="buttonnn"> CLICK ME!!</button>
 
 
 </div>
 
 
     </div>
+
+
 <script>
 
 
@@ -87,14 +89,38 @@ function renderer(){
   for (let i = 0; i < myvar.length; i++) {
     const blob = document.getElementById("sthdiv");
     const per = document.createElement('p');
+    const deler = document.createElement('button');
+    deler.innerHTML = "CLICKER!!!"
     const divver = document.createElement('div')
+    deler.addEventListener('click', ()=>deller(myvar[i].id))
+    divver.append(deler)
+    document.getElementById('buttonnn').style ="display:none;"
+    divver.classList.add("divverdiv")
+    //divver.style ="background-color:blue;Margin: auto;";
+    //per.style="font-size: 24px; color: white;";
     
     per.innerText = `yees : ${myvar[i].todo}`;
     divver.append(per);
     
     blob.append(divver);
-   
+    
+    function deller(nr){
 
+      console.log(nr);
+
+
+     document.getElementById("lol").innerHTML = nr
+
+     const xhrs = new XMLHttpRequest();
+     xhrs.open("POST","deletus.php");
+     xhrs.setRequestHeader("Content-Type","application/int");
+     xhrs.send(nr);
+      
+      window.location.reload();
+
+
+    }
+    
 
     
     
@@ -103,12 +129,13 @@ function renderer(){
 
 
 </script>
-        
+    
  <div class = "deletus"> 
 
   <form action="deletus.php" method ="POST">
 
-  <input type ="text" placeholder="..typy" name ="deleter"/>
+  <input type ="text" placeholder="..typy" name ="deleter"  />
+  <label id="lol" name ="idname"> </label>
   <input name ="sumbitter" type ="submit"/>
 
 </form>
@@ -121,4 +148,6 @@ function renderer(){
 
 
   </body>
+
+
 </html>
