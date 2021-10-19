@@ -4,3 +4,22 @@
   display: flex;
   justify-content: center;
 }
+
+#bt1 {
+  width: 100px;
+  background-color: red;
+}
+
+#empty {
+  background-color: red;
+}
+
+#empty p {
+  color: blue;
+  font-size: 25px;
+}
+
+#divvy {
+  background-color: green;
+  margin: 15px;
+}
