@@ -1,0 +1,133 @@
+.bodycontainer {
+  background-color: #212529;
+
+  width: 100%;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+#navitemid {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0px 10px;
+}
+
+.cont {
+  color: white;
+  width: 250px;
+  margin: 10px;
+  border: 1px white solid;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #343a40;
+}
+
+/**/
+
+.vorsteller {
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+}
+
+.vorstellwrapper {
+  display: flex;
+  justify-content: center;
+}
+.vorstelllinks {
+  flex-basis: 25%;
+}
+.vorstellrechts {
+  flex-basis: 25%;
+  margin-left: 25px;
+  padding: 25px;
+  color: white;
+}
+
+/**/
+
+.emailer {
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+}
+
+.emailwrapper {
+  color: white;
+  background-color: #343a40;
+  display: flex;
+  padding: 25px;
+  border-radius: 35px;
+  margin: 25px;
+}
+
+.emailleft {
+  flex-basis: 50%;
+}
+
+.emailrechts {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+#submitbtn1 {
+  margin-left: 55px;
+}
+
+.emailrechts input {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .line {
+    display: block;
+  }
+}
+
+/*SLIDER*/
+
+.slider {
+  background-color: #212529;
+  align-items: center;
+  display: flex;
+
+  justify-content: center;
+}
+
+.slider button {
+  height: 40px;
+  z-index: 100;
+}
+
+.carouselslider {
+  display: flex;
+}
+
+.slidercontainer {
+  width: 450px;
+  height: 400px;
+  margin: auto;
+}
+
+/*FOOTER*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.col1 {
+  flex-basis: 15%;
+  margin: 15px;
+  color: white;
+}
+
+.col2 {
+  flex-basis: 35%;
+  margin: 15px 10px;
+  color: white;
+}
