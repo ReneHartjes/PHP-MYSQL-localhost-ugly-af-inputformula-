@@ -1,0 +1,105 @@
+.shopcontainer {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+.shopwrapper {
+  width: 90%;
+}
+
+.mainwindow {
+  float: right;
+  width: 90%;
+  background-color: #333;
+  height: 100%;
+  min-width: 550px;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+
+.sitebar {
+  width: 9%;
+  min-width: 75px;
+  float: left;
+  top: 35px;
+  left: 15px;
+  height: 800px;
+  position: fixed;
+  background-color: #333;
+  margin-right: 15px;
+  border-radius: 15px;
+}
+
+.shoptop {
+  width: 100%;
+}
+
+.craycrl {
+  display: block;
+  font-size: 24px;
+  color: white;
+  margin: 15px;
+  margin-bottom: 19px;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 11px 7px 4px rgb(19, 19, 19);
+  width: 550px;
+  padding: 5px;
+  padding-right: 10px;
+  overflow: hidden;
+  background-color: #495057;
+}
+
+.craycrl h3 {
+  color: white;
+  border-bottom: 1px solid grey;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px;
+}
+
+.craycrl button {
+  background-color: #0d6efd;
+  border-radius: 10px;
+  color: white;
+  margin-left: 85px;
+}
+
+.craycrl p {
+  font-size: 16px;
+  width: 250px;
+  float: right;
+  padding: 20px;
+  background-image: url("./images/opcbg2.png");
+  margin-right: 25px;
+  border: 1px solid grey;
+
+  border-radius: 15px;
+}
+
+.craycrl h5 {
+  text-align: center;
+}
+
+.addpic {
+  float: left;
+  padding: 25px;
+  position: relative;
+}
+
+.addpic img {
+  box-shadow: 10px 15px 5px#333;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.craycrl label {
+  padding: 5px;
+  border-radius: 8px;
+  float: right;
+  border: 1px solid grey;
+
+  margin-right: 25px;
+}
